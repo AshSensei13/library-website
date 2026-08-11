@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./book-page.css">
+    <script defer src="./book-page.js"></script>
     <title>Book Page</title>
 </head>
 
 <body>
-    <section class="bookInfo">
+    <section id="bookInfo">
         <header>
             <h1>Supergirl: Woman of Tomorrow</h1>
             <ul>
@@ -25,7 +27,7 @@
 
 
 
-    <section class="bookSummary">
+    <section id="bookSummary">
         <div>
             <p> Her planet was destroyed. Sent to Earth to protect a baby cousin who never needed saving. Forever living
                 in his shadow. The “Supergirl” to his Superman. But when Kara is sought out by an alien seeking revenge
@@ -39,7 +41,7 @@
     </section>
 
 
-    <section class="bookLog">
+    <section id="bookLog">
         <form>
 
             <p>
@@ -56,11 +58,15 @@
                 <label for="dateRel">Enter date</label>
                 <input name="date" id="dateRel" type="text" placeholder="11/08/2026" required>
             </p>
-
             <p>
-                <label for="dateReturn">Enter Book Genre</label>
-                <input name="date" id="dateReturn" type="text" placeholder="25/08/2026" required>
+                <button id="submitButton" type="submit">
+                    Submit
+                </button>
             </p>
+    </section>
+    <section id="logTableSection">
+        <table id="logTable">
+        </table>
     </section>
 </body>
 

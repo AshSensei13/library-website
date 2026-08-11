@@ -25,4 +25,13 @@ function addRow(event) {
   cell2.innerHTML = authorName;
   cell3.innerHTML = isbnNo;
   cell4.innerHTML = genreCat;
+
+  resetForm()
+}
+
+function resetForm(){
+    document.querySelector("#bookInput").value = ''
+    document.querySelector("#authorInput").value = ''
+    document.querySelector("#isbnInput").value = ''
+    document.querySelector("#genreInput").value = ''
 }

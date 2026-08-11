@@ -7,10 +7,10 @@ function addRow(event) {
   event.preventDefault();
 
 
-  const bookName = document.querySelector("#bookInput").value;
-  const authorName = document.querySelector("#authorInput").value;
-  const isbnNo = document.querySelector("#isbnInput").value;
-  const genreCat = document.querySelector("#genreInput").value;
+  let bookName = document.querySelector("#bookInput").value;
+  let authorName = document.querySelector("#authorInput").value;
+  let isbnNo = document.querySelector("#isbnInput").value;
+  let genreCat = document.querySelector("#genreInput").value;
 
   var table = document.getElementById("bookTable");
 

@@ -4,27 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="data-table.css">
     <title>Library Table</title>
 </head>
 
 <body>
 
-    <section>
+    <section class="bookForm">
         <form>
+            <p>
             <label for="bookInput">Enter Book name</label>
-            <input name=“book” id=“bookInput” type=“text” placeholder=“e.g. Harry Potter” required>
+            <input name=“book” id=“bookInput” type=“text” placeholder=“e.g Harry Potter” required>
+            </p>
 
+            <p>
             <label for="authorInput">Enter Author name</label>
             <input name="author" id="authorInput" type="text" placeholder="e.g. J.K Rowling" required>
+            </form>
+            </p>
 
+            <p>
             <label for="isbnInput">Enter ISBN</label>
             <input name="isbn" id="isbnInput" type="text" placeholder="e.g. 978-..." required>
+            </p>
 
+            <p>
             <label for="genreInput">Enter Book Genre</label>
             <input name="genre" id="genreInput" type="text" placeholder="e.g. Action" required>
+            </p>
 
-
-            <button type=submit value=“submit”> Submit</button>
+            <p>
+            <button id="submitButton" type=submit value=“submit”> Submit</button>
+            </p>
 
         </form>
     </section>

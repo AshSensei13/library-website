@@ -1,5 +1,6 @@
 const bookInput = document.querySelector("#bookForm form");
 const bookTable = document.querySelector("#tableSection table");
+const searchBar = document.querySelector('#searchBar');
 
 const initialBooks = [
   { book: "The Hobbit", author: "J.R.R. Tolkien", isbn: "9780618968633" },
@@ -63,3 +64,12 @@ function resetForm(){
 }
 
 initTable();
+
+  searchBar.addEventListener('input', (e) => {
+    const term = e.target.value.toLowerCase();
+    const rows = bookTable.querySelectorAll('tbody tr');
+    rows.forEach((row) => {
+      const text = row.textContent.toLowerCase();
+      row.style.display = text.includes(term) ? '' : 'none';
+    });
+  });

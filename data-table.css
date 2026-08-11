@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e6e8;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#submitButton {
+    margin-left: 105px;
+    background-color: blue;
+    color: white;
+}
